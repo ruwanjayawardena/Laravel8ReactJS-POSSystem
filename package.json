@@ -1,0 +1,43 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.0.0",
+        "axios": "^0.21",
+        "bootstrap": "^5.0.0-beta3",
+        "jquery": "^3.2",
+        "laravel-mix": "^6.0.19",
+        "lodash": "^4.17.19",
+        "popper.js": "^1.12",
+        "postcss": "^8.1.14",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "resolve-url-loader": "^4.0.0",
+        "sass": "^1.15.2",
+        "sass-loader": "^8.0.0"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.35",
+        "@fortawesome/free-solid-svg-icons": "^5.15.3",
+        "@fortawesome/react-fontawesome": "^0.1.14",
+        "datatables.net": "^1.10.24",
+        "datatables.net-bs4": "^1.10.24",
+        "datatables.net-buttons-bs4": "^1.7.0",
+        "datatables.net-responsive-bs4": "^2.2.7",
+        "datatables.net-responsive-dt": "^2.2.7",
+        "jszip": "^3.6.0",
+        "pdfmake": "^0.1.71",
+        "react-icons": "^4.2.0",
+        "react-router-dom": "^5.2.0",
+        "react-select": "^4.3.0",
+        "sweetalert2": "^10.16.0"
+    }
+}

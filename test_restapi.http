@@ -1,0 +1,91 @@
+GET http://127.0.0.1:8000/api/sub1categories HTTP/1.1
+###
+###
+POST http://127.0.0.1:8000/api/maincategories HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+{  
+    "category":"TEST FINAL",    
+    "code":"ZZZ"     
+}
+###
+PUT http://127.0.0.1:8000/api/maincategories/24 HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+{  
+    "category":"Sample Category 5 Update",    
+    "code":"XX2"     
+}
+###
+POST http://127.0.0.1:8000/api/sub1categories HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+{  
+    "maincategory":2,    
+    "name":"TEST6"     
+}
+###
+PUT http://127.0.0.1:8000/api/sub1categories/1 HTTP/1.1
+content-type: application/json
+//Accept: application/json
+
+{   
+    "name":"TEST1 Update 5"
+}
+###
+DELETE http://127.0.0.1:8000/api/sub1categories/10 HTTP/1.1
+###
+GET http://127.0.0.1:8000/api/sub1categories/1 HTTP/1.1
+
+//Accept: application/json
+
+
+//WeatherAPI TEST
+###
+POST http://127.0.0.1:8000/api/weather/filterdata HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+{  
+    "start":0,
+    "length":10
+}
+
+###
+GET http://127.0.0.1:8000/api/weather/5 HTTP/1.1
+###
+GET http://127.0.0.1:8000/api/weather/filterbydate/2021-04-28/2021-04-29 HTTP/1.1
+content-type: application/json
+###
+GET http://127.0.0.1:8000/api/weather?lat=80&lon=90 HTTP/1.1
+###
+GET http://127.0.0.1:8000/api/weather/80/90 HTTP/1.1
+
+
+//Product API TEST
+###
+GET http://127.0.0.1:8000/api/products/getnextproductid HTTP/1.1
+
+###
+GET http://127.0.0.1:8000/api/cmb/supplier HTTP/1.1
+###
+POST http://127.0.0.1:8000/api/report/returngrn HTTP/1.1
+
+###
+POST http://127.0.0.1:8000/api/bill/ HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+{
+    "bl_net_total":"90.00",
+    "bl_discount_total":"3.00",
+    "bl_paid_total":"100",
+    "bl_balance_due":"-10",
+    "bl_note":"test bill",
+    "py_customer":14,
+    "py_pay_type":"1",
+}
+
